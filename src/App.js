@@ -11,7 +11,7 @@ function App() {
 
     
       <div className='overlay'>
-      <video src={video} autoplay="autoplay" loop muted></video>
+      <video src={video} autoplay="autoplay" loop controls muted></video>
         <div className='container'>
           <Header/>
           <Footer/>
