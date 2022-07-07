@@ -1,24 +1,25 @@
-import logo from './logo.svg';
 import './App.css';
-
+import Footer from './Components/Footer';
+import Header from './Components/Header';
+import video from "../src/images/back.mp4"
 function App() {
+  // let imageArr = ["back.jpg", "front.jpg", "right.jpg"];
+  // let randomNum = Math.floor(Math.random() * imageArr.length);
+  // let randomImage = imageArr[randomNum];
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    // <div className="App" style={{backgroundImage: `url(${randomImage})`}}>
+
+    
+      <div className='overlay'>
+      <video src={video} autoplay="autoplay" loop></video>
+        <div className='container'>
+          <Header/>
+          <Footer/>
+        </div>
+        </div>
+   
+    // </div>
+
   );
 }
 
